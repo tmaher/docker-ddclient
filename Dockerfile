@@ -1,6 +1,4 @@
 FROM alpine
-ARG UID=0
-ARG GID=0
 
 RUN \
   echo "**** install build packages ****" && \
@@ -51,5 +49,4 @@ RUN \
     
 VOLUME /config
 
-USER $UID:$GID
 ENTRYPOINT ["/usr/bin/ddclient", "-foreground"]

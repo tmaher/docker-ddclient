@@ -18,8 +18,13 @@ RUN \
     jq \
     perl \
     perl-digest-sha1 \
+    perl-http-daemon \
+    perl-http-message \
     perl-io-socket-inet6 \
     perl-io-socket-ssl \
+    perl-test-mockmodule \
+    perl-test-tcp \
+    perl-test-warnings \
     perl-json && \
   curl -L -o /tmp/ddclient.tgz \
     https://github.com/ddclient/ddclient/archive/refs/tags/v3.10.0_2.tar.gz && \
